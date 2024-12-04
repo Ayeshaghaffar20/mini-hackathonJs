@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+</head>
+<body>
+
+      <div class="lg:m-10">
+  <form class="relative border border-gray-100 space-y-3 max-w-screen-md mx-auto rounded-md bg-white p-6 shadow-xl lg:p-10">
+  <h1 style="text-align: center; font-size: 40px;" class="mb-6 text-xl font-semibold lg:text-2xl">Sign up</h1>
+
+  <div class="grid gap-3 md:grid-cols-2">
+    <div> 
+      <label class=""> First Name </label>
+      <input id="firstName" type="text" placeholder="Your Name" class="mt-2 h-12 w-full rounded-md bg-gray-100 px-3" />
+    </div>
+    <div>
+      <label class=""> Last Name </label>
+      <input id="lastName" type="text" placeholder="Last  Name" class="mt-2 h-12 w-full rounded-md bg-gray-100 px-3" />
+    </div>
+  </div>
+  <div>
+    <label class=""> Username </label>
+    <input id="userName" type="text" placeholder="Username" class="mt-2 h-12 w-full rounded-md bg-gray-100 px-3" />
+  </div>
+  <div>
+    <label class=""> Email Address </label>
+    <input id="email" type="email" placeholder="Info@example.com" class="mt-2 h-12 w-full rounded-md bg-gray-100 px-3" />
+  </div>
+  <div>
+    <label class=""> Password </label>
+    <input id="signUpPass" type="password" placeholder="******" class="mt-2 h-12 w-full rounded-md bg-gray-100 px-3" />
+  </div>
+  <div class="grid gap-3 lg:grid-cols-2">
+ <div class="mb-4">
+        <label class="mb-2 block text-sm " for="gender">Gender</label
+        ><select class="bg-gray-100 shadow-sm mt-1  h-12 cursor-pointer w-full appearance-none rounded border border-gray-300 py-2 px-3  leading-tight outline-none ring-blue-500 focus:ring" id="gender" required="">
+          <option value="male" class="">Male ></option>
+          <option value="Female" class="">Female ></option>
+          
+        </select>
+      </div>
+    <div>
+      <label class=""> Phone: <span class="text-sm text-gray-400">(optional)</span> </label>
+      <input id="phoneNo" type="text" placeholder="+543 5445 0543" class="mt-2 h-12 w-full rounded-md bg-gray-100 px-3" />
+    </div>
+  </div>
+  <div>
+      <label class=""> Profile Picture </label>
+      <div id="dropZone" class="mt-2 flex h-32 w-full cursor-pointer items-center justify-center rounded-md border-2 border-dashed border-gray-300 bg-gray-100 text-gray-500">
+        <p>Drag & drop your image here or click to upload</p>
+        <input id="profilePictureInput" type="file" accept="image/*" class="hidden" />
+      </div>
+    </div>
+        <!-- Text Area for Bio -->
+    <div>
+      <label class=""> Bio </label>
+      <textarea id="bio" placeholder="Add your post" class="mt-2 w-full rounded-md bg-gray-100 px-3 py-2 h-24 resize-none"></textarea>
+    </div>
+
+
+  <div class="pt-12 pb-12">
+        <p class="whitespace-nowrap">
+          Don't have an account?
+          <a style="color: blue; text-decoration: none;" href="signIn.html" class="font-semibold underline">Sign In </a>
+        </p>
+      </div>
+
+  <div>
+    <button id="signUpBtn" type="button" class="mt-5 w-full rounded-md bg-blue-600 p-2 text-center font-semibold text-white"><a href="">Sign Up</a></button>
+  </div>
+</form>
+
+</div>
+    
+
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+<script src="https://cdn.tailwindcss.com"></script>
+    <script type="module" src="firebase.js"></script>
+    <script type="module" src="signUp.js"></script>
+</body>
+</body>
+</html>
